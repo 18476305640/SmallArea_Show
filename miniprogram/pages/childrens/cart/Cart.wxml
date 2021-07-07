@@ -1,0 +1,53 @@
+<view  class="cart_isnull "   hidden="{{hide}}"    >
+        <view>
+                <view class="hints" >
+                      <image src="/resource/image/common/gouwuche.svg"></image>
+                      <text>这个购物车是空的~</text>
+                </view>
+        </view>
+</view>
+<view>
+      <view class="store_info">
+            <view class="cart_store">
+                  <view>
+                          <image src="{{ store.cover }}"></image>
+                  </view>
+                  <view class="info">
+                          <text>{{ store.name }}</text>
+                          <text>评分: {{ store_star/5*100 }}%</text>
+                  </view>
+            </view>
+            <view class="carts">
+                  <image   src="/resource/image/common/totail.svg" mode="widthFix"></image>
+            </view>
+      </view>
+      <view class="cart">
+              <form catchsubmit="formSubmit" catchreset="formReset">
+                  <checkbox-group name="checkbox">
+                        <label class="item" wx:for="{{ loadCart }}">
+                                <view class="left">
+                                      <view class="cover">
+                                              <image src="{{ item.cover }}"></image>
+                                      </view>
+                                      <view class="bash_info">
+                                            <text class="name">{{ item.name }}</text>
+                                            <text class="price">￥{{ item.price }}</text>
+                                      </view >
+                                </view>
+                                <view class="countController">
+                                      <view catchtap="reduce"  data-operation="{{ item.id }}" >-</view>
+                                      <text>{{ item.count }}</text>
+                                      <view catchtap="increment" data-operation="{{ item.id }}">+</view>
+                                </view>
+                                <view class="right">
+                                        <checkbox value="{{ item.id }}"/>
+                                </view>
+                        </label>
+                    </checkbox-group>
+              </form>
+      </view>
+      
+</view>
+<view class="go_play">
+      <view>去支付(￥{{priceSum}})</view>
+</view>

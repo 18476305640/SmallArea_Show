@@ -1,0 +1,22 @@
+<view class="type" >
+      <view class="typeLeft">
+            <view  wx:for="{{typeData}}"   bindtap="altType"  data-operation="{{index}}"  class="{{currentType==index? 'active':''}}">
+                    <text>{{item.name}}</text>
+            </view>
+      </view>
+
+
+      <view class="typeRight">
+              <view>
+                      <view wx:for="{{typeData[currentType].children}}" class="type-content"  bindtap="toGoodsLineStore" data-operation="{{item.id}}">
+                              <view class="image-box">
+                                    <image mode="widthFix" src="{{item.cover}}"></image>
+                              </view>
+                              <text>{{item.name}}</text>
+                      </view>
+              </view>
+
+      </view>
+
+
+</view>

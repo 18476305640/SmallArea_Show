@@ -1,0 +1,8 @@
+<!--components/stack-item/stack-item.wxml-->
+<view class="img_parent" bindtap="toTargetPage">
+    <slot name="mess"></slot>
+    <view>
+          <slot name="icon"></slot>
+    </view>
+    <slot name="name"></slot>
+</view>

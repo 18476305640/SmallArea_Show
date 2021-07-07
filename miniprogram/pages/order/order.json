@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+      "order-item": "/components/common/order-item/order-item"
+  },
+  "navigationStyle": "custom"
+
+}

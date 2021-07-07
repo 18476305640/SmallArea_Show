@@ -1,0 +1,101 @@
+/**搜索模块**/
+.search {
+    position: absolute;
+    left: 0rpx;
+    top: 0rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 750rpx;
+    height: 90rpx;
+    background: #F9D452;
+
+    box-sizing: border-box;
+    padding: 0rpx 20rpx;
+    
+}
+.search>input {
+    display: block;
+     width: 650rpx;
+     height: 60rpx;
+     margin: 0px 20rpx;
+     padding-left: 20rpx;
+     background: #FFFFFF;
+
+}   
+.search>view {
+    width: 60rpx;
+    height: 60rpx;
+}
+.search>view>image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/**carousel 轮播图**/
+.carousel {
+  margin: 100rpx auto 10rpx;
+  width: 730rpx;
+}
+.carousel .carousel-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.carousel-item>image {
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+/*分类导航*/
+.types {
+      width: 750rpx;
+      height: 300rpx;
+      background: #FFFFFF;
+      margin: 0px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: space-around;
+      
+      
+}
+
+/*网店与附近门店*/
+.control {
+    width: 750rpx;
+    line-height: 80rpx;
+    margin: 10rpx 0rpx 0rpx;
+    border-bottom: 1rpx solid #EFEFEF; 
+    background: #FFFFFF;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 20rpx 0px 0rpx;
+    font-size: 30rpx;
+}
+.control>view>text {
+    display: inline-block;
+    margin: 0px 20rpx;
+    
+}
+
+.content-slide {
+    width: 750rpx;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    
+}
+.content-slide>view {
+    width: 750rpx;
+    
+}
+.active  {
+      font-weight: 700;
+}
+.hidden {
+  display: none;
+}

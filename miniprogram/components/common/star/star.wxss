@@ -1,0 +1,20 @@
+.star_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.star_container>view {
+    
+    height: 30rpx;
+}
+.star_container>view>text {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

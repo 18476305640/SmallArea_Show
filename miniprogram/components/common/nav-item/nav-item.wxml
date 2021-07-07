@@ -1,0 +1,6 @@
+<view class="nav-item">
+      <view>
+            <image src="{{icon}}"></image>
+      </view>
+      <text ><slot></slot></text>
+</view>

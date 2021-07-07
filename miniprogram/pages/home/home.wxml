@@ -1,0 +1,54 @@
+<view>
+      <view class="search">
+            <input type="text" placeholder="搜索你想要的商品与店铺"></input>
+            <view><image src="/resource/image/common/saoma.svg"></image></view>
+      </view>
+      <view class="carousel">
+          <swiper autoplay   circular    interval="4000" 
+indicator-dots>
+                    <swiper-item wx:for="{{swiperData}}" wx:key="{{item.id}}"  class="carousel-item" >
+                          <image src="{{item.image}}"   ></image>
+                    </swiper-item>
+          </swiper>
+      </view>
+
+      <view class="types">
+            <nav-item icon="/resource/image/nav/Journalism.svg" >实用新闻</nav-item>
+            <nav-item icon="/resource/image/nav/kuaidi.svg" >快递</nav-item>
+            <nav-item icon="/resource/image/nav/meishi.svg" >美食</nav-item>
+            <nav-item icon="/resource/image/nav/paotuiAPP.svg" >跑腿</nav-item>
+            <nav-item icon="/resource/image/nav/yifu.svg" >穿衣</nav-item>
+            <nav-item icon="/resource/image/nav/shouji.svg" >手机</nav-item>
+            <nav-item icon="/resource/image/nav/shoujichongzhi.svg" >充值</nav-item>
+            <nav-item icon="/resource/image/nav/taiyangrichu.svg" >日出</nav-item>
+            <nav-item icon="/resource/image/nav/wangluo.svg" >光纤</nav-item>
+            <nav-item icon="/resource/image/nav/gerenjubaodengji.svg" >举报</nav-item>
+      </view>
+      <view>
+            <view class="control">
+                  <view >
+                        <text class="{{currentType=='gs'? 'active': ''}}" bindtap="change"  data-operation="gs">网上商店</text>
+                        <text class="{{currentType=='ls'? 'active': ''}}"bindtap="change"   data-operation="ls">附近门店</text>  
+                  </view>
+                  <view>
+                        <text>筛选</text>
+                  </view>
+
+            </view>
+            <view class="content-slide" > 
+                  <view class="gs" class="{{currentType!='gs'? 'hidden':'' }}">
+                      <store wx:for="{{gs_data.data}}"  storeData="{{item}}" ></store>
+                         
+                  </view>
+                
+                  <view class="ls" class="{{currentType!='ls'? 'hidden':'' }}">
+                         附近门店列表
+                  </view>
+            </view>
+
+      </view>
+
+
+      
+
+</view>

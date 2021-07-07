@@ -1,0 +1,72 @@
+/* components/common/profileTop/profileTop.wxss */
+/* pages/profile/profile.wxss */
+
+.header {
+  width: 750rpx;
+  height: 200rpx;
+  background: #F9D452;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+.header>view {
+    height: 190rpx;
+}
+.header>view:nth-child(1) {
+    width: 160rpx;
+    margin: 0rpx 40rpx; 
+    overflow: hidden;
+}
+.header>view:nth-child(1) > image {
+    border-radius: 50%;
+   display: block;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.header>view:nth-child(2) {
+    height: 160rpx;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    color: rgb(33,27,29);
+    justify-content: space-between;
+}
+.header>view:nth-child(2)>text:nth-child(1) {
+   font-weight: 600;
+    
+}
+.header>view:nth-child(2)>text:nth-child(2) {
+  
+   box-sizing: border-box;
+    font-size: 30rpx;
+    padding-bottom: 10rpx;
+    
+}
+
+/* .header>view:nth-child(2) > text {
+   background: red;
+} */
+.block {
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: flex-start;
+   align-items: center;
+   padding-bottom: 10rpx;
+}
+.block>navigator {
+  display: block;
+  line-height: 50rpx;
+  text-align: center;
+  /* border: 1px solid rgb(211, 178, 59); */
+  background: rgb(230, 194, 65);
+  border-radius: 20rpx;
+  font-size: 30rpx;
+  padding:0px 15px;
+  margin-right: 20rpx;
+
+}

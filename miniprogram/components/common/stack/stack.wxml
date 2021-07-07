@@ -1,0 +1,10 @@
+<!--components/stack/stack.wxml-->
+
+<view class="box">
+          <!-- <text  class="type-name" >{{title}}</text> -->
+          <view class="container">
+                <slot >
+                </slot>
+          </view>
+          
+</view>

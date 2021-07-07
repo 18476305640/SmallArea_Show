@@ -1,0 +1,29 @@
+<view class="total">
+   <view class="store">
+         <view>
+              <image src="{{data.icon}}"></image>
+              <text>{{ data.storeName }}</text>
+         </view>
+         <text>进店</text>  
+  </view>
+  <view class="detail">
+        <view wx:for="{{ data.detail }}" class="order_table">
+              <text class="col_name">{{ item.goodsName }}</text>
+              <text class="col_price">￥{{item.price}}</text>
+              <text class="col_count">x{{item.count}}</text>
+              <text class="col_sum">  ￥{{ item.price*item.count }}</text>
+        </view>
+        <view class="sum">
+              <text>合计</text>
+              <text>￥{{ sum }}</text>
+        </view>
+  </view>
+  <view class="state">
+
+  </view>
+  <view class="control">
+        <text>再下一单</text>
+        <text>订单详情</text>
+  </view>
+    
+</view>

@@ -1,0 +1,12 @@
+
+/**
+在连接用户信息中间加大距离
+*/
+.option>stack {
+  display: block;
+  margin-bottom: 30rpx;
+}
+.option>stack:nth-child(1) {
+  padding-top: 30rpx; 
+   background: #ffffff;
+}

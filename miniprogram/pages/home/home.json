@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+        "nav-item": "/components/common/nav-item/nav-item",
+        "store": "/components/common/store/store"
+  },
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance":50
+}

@@ -1,0 +1,92 @@
+<!-- carousel: (3) [{…}, {…}, {…}]
+cover: "https://g-search2.alicdn.com/img/bao/uploaded/i4/i2/2208377286554/O1CN01DfQlpj1yHmVFAM23a_!!0-item_pic.jpg_460x460Q90.jpg_.webp"
+createTime: "2021-06-28T13:36:54.000+0000"
+describe: "难哄完结篇 竹已实体书 随书赠时光手账本"
+id: "6"
+more: null
+name: "难哄完结篇 竹已实体书 随书赠时光手账本"
+params: [{…}]
+partitionGlobalId: "3"
+partitionLocalId: "7"
+price: 40
+storeId: "1"
+updateTime: "2021-06-28T13:37:00.000+0000" -->
+
+
+<scroll-view>
+    <view class="swiper-container">
+        <swiper  circular interval="4000" indicator-dots>
+                    <swiper-item wx:for="{{ !isloaded?'':(goodsLineDetails.carousel?goodsLineDetails.carousel:fullback_carousel )}}" wx:key="{{index}}"  class="carousel-item" >
+                          <image src="{{item.carousel_item}}"   ></image>
+                    </swiper-item>
+        </swiper>
+    </view>
+    <view class="bash_container">
+        <view class="bash_one">
+            <text>￥{{ goodsLineDetails.price}}</text>
+            <view>
+                <text>{{ goodsFollowNumber}}</text>
+                <image src="{{ user_follow_goods?'/resource/image/common/followed.svg':'/resource/image/common/follow.svg'}}" mode="widthFix"></image>
+            </view>
+        </view>
+        <view class="bash_two">
+            <text class="name">{{ goodsLineDetails.name }}</text>
+            <text class="describe">{{ goodsLineDetails.describe }}</text>
+        </view>
+    </view>
+    <view class="infomation-navigator">
+        <view class="nav">
+            <text>详情</text>
+            <text>评论</text>
+            <text>服务</text>
+        </view>
+        <view class="content">
+        
+        </view>
+    </view>
+</scroll-view>
+<view class="style_window" catchtap="hiddenWindow"  hidden="{{!show_style_window}}">  <!-- 弹窗显示 -->
+        <!-- <view wx:for="{{ goods_style}}">
+              <text>{{ item.name }}</text>
+              <text>{{ item.price }}</text>
+              
+        </view> -->
+        <view  catchtap="no_back">
+                <view class="who">
+                      <view class="img">
+                            <image src="{{ current_style_data.cover==null?goodsLineDetails.cover: current_style_data.cover  }}"></image>
+                      </view>
+                      <view class="data">
+                            <text >￥{{ current_style_data.price==null?goodsLineDetails.price:current_style_data.price}}</text>
+                            <text>{{current_style_data.name==null?goodsLineDetails.name:current_style_data.name}}</text>
+                      </view>
+                </view>
+                <view>
+                            <view wx:for="{{ goods_style}}"  class="style_item {{cart_between.goods_style_id == item.id?'active_style':'' }}" bindtap="changStyleId" data-operation="{{item.id}}">{{item.name}}</view>
+                  </view>
+        </view>
+</view  >
+<view class="controler">
+    <view class="box-item">
+        <navigator>
+            <!-- <view></view> -->
+            <image src="/resource/image/common/dianpu.svg" mode="widthFix"></image>
+            <text>店铺</text>
+        </navigator>
+        <navigator>
+            <!-- <view></view> -->
+            <image src="/resource/image/common/icon-test.svg" mode="widthFix"></image>
+            <text>客服</text>
+        </navigator>
+        <navigator url="{{ '/pages/childrens/cart/Cart?goods_id='+goods_id }}">
+            <view hidden="{{loadCart.length==0}}">{{loadCart.length}}</view>
+            <image src="/resource/image/common/gouwuche.svg" mode="widthFix"></image>
+            <text>购物车</text>
+        </navigator>
+        
+    </view>
+    <view class="target-container">
+        <view bindtap="addCart">{{ !is_add_cart?'加入购物车':'进店加购'}}</view>
+        <view bindtap="goPlay">{{!is_add_cart?'立即购买':'去收银台'}}</view>
+    </view>
+</view>

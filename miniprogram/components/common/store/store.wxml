@@ -1,0 +1,28 @@
+<navigator class="store" url="/pages/childrens/store/Store?id={{storeData.id}}">
+      <view class="icon">
+            <text>{{storeData.title}}</text>
+            <image src="{{storeData.icon}}"></image>
+      </view>
+
+      <view class="content"> 
+            <view class="name">{{storeData.name}}</view>
+            <view class="sold_star">
+                    <text>月售: {{storeData.sold}}</text>
+                    <text>好评:</text>
+                    <star score="{{storeData.star}}"></star>
+            </view>
+            <view >
+                  <text class="goods_introduce ">{{storeData.goods.introduce}}</text>
+            </view>
+            <view class="showGoods"  wx:if="{{storeData.goods.show_goods.length==0?false:true}}"   >
+                    <navigator  wx:for="{{storeData.goods.show_goods}}" class="showGoods_item">
+                          <view>
+                                <image src="{{item.cover}}"></image>
+                          </view>
+                          <text>{{item.name}}</text>
+                          <text>￥{{item.price}}</text>
+                    </navigator>
+                  
+            </view>
+      </view>
+</navigator>

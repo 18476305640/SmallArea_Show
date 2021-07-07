@@ -1,0 +1,25 @@
+<view>
+    <view class="search">
+          <input placeholder="搜索订单"></input>
+    </view>
+    <view class="nav">
+          <view class="left">
+                <text bindtap="altNav" data-operation="gs"  class="{{ currentNav == 'gs'? 'active':''}}"   >网店订单</text>
+                <text bindtap="altNav" data-operation="ls"   class="{{ currentNav == 'ls'? 'active':''}}">门店订单</text>
+          </view>
+          <view class="right">筛选</view>
+    </view>
+    <view class="content">
+          <view class="{{ currentNav != 'gs'? 'hidden':''}}" >
+                <order-item wx:for="{{ gsData.data }}" data="{{item}}"></order-item>
+          </view>
+          <view class="{{ currentNav != 'ls'? 'hidden':''}}" >
+              门店订单内容
+          </view>
+
+
+
+    </view>
+
+
+</view>

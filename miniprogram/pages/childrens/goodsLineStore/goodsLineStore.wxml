@@ -1,0 +1,31 @@
+<view class="total">
+      <view class="search">
+            <input type="text" placeholder="搜索当前分类的商品或商家"></input>
+            <text>搜索</text>
+      </view>
+      <view class="title">
+            <view class="{{pattern!='store'? 'active':''}}" bindtap="altNav" data-operation="goods">
+                  商品
+            </view>
+            <view class="{{pattern=='store'?'active':''}}" bindtap="addItem" bindtap="altNav" data-operation="store">
+                  商家
+            </view>
+      </view>
+      <scroll-view class="content" lower-threshold="30" scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bind="scroll">
+            <view class="slide {{ pattern !='store'?'':'disable' }}">
+                  <navigator wx:for="{{ type_data.goods }}" url="/pages/childrens/goodsDetail/goodsDetail?id={{item.id}}">
+                        <view class="goodsLeft">
+                              <image src="{{ item.cover }}"></image>
+                        </view>
+                        <view class="goodsRight">
+                              <text class="goods_title">{{ item.name }}</text>
+                              <text class="describe">{{ item.describe }}</text>
+                              <text>评分: {{ item.star }}</text>
+                              <text class="money">￥{{ item.price }}</text>
+                              <text>{{ item.store }}</text>
+                        </view>
+                  </navigator>
+            </view>
+            <view class="slide {{ pattern=='store'?'':'disable' }}">商家显示</view>
+      </scroll-view>
+</view>

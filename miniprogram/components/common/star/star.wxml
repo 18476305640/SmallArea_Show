@@ -1,0 +1,8 @@
+<view class="star_container">
+      <view   wx:for="{{scoreArr}}" >
+              <image src="./img/1.png" mode="widthFix"  wx:if="{{item==1}}"  mode="heightFix"></image>
+              <image src="./img/0.5.png" mode="widthFix" wx:if="{{item==0.5}}" mode="heightFix"></image>
+              <image src="./img/0.png" mode="widthFix" wx:if="{{item==0}}" mode="heightFix"></image>
+      </view>
+      
+</view>

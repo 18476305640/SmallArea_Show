@@ -1,0 +1,14 @@
+<view class="header">
+            <view>
+                  <image src="{{user.headimg==null?(tmpHeadimg == null?'/resource/image/replace/2119299531.png': tmpHeadimg  ): user.headimg}}" mode="widthFix" bindtap="updatex"></image>
+            </view>
+            <view>
+                  <text>{{tmpName==null? user.fullname: tmpName}}</text>
+                  <text>{{user.personality}}</text>
+                  <view class="block">
+                        <navigator>信息</navigator>
+                        <navigator>余额</navigator>
+                        <navigator>设置</navigator>
+                  </view>
+            </view>
+</view>

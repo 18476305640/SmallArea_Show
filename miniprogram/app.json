@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/type/type",
+    "pages/order/order",
+    "pages/index/index",
+    "pages/profile/profile",
+    "pages/childrens/mession/mession",
+    "pages/childrens/goodsLineStore/goodsLineStore",
+    "pages/childrens/goodsDetail/goodsDetail",
+    "pages/childrens/cashier/cashier",
+    "pages/childrens/cart/Cart",
+    "pages/childrens/store/Store"
+  ],
+  "window": {
+    "backgroundColor": "#D99938",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F9D452",
+    "navigationBarTitleText": "小社区-购物助手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "resource/image/tabBar/home.png",
+        "selectedIconPath": "resource/image/tabBar/active.png"
+      },
+      {
+        "pagePath": "pages/type/type",
+        "text": "分类",
+        "iconPath": "resource/image/tabBar/type.png",
+        "selectedIconPath": "resource/image/tabBar/active.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "购物车",
+        "iconPath": "resource/image/tabBar/order.png",
+        "selectedIconPath": "resource/image/tabBar/active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人",
+        "iconPath": "resource/image/tabBar/profile.png",
+        "selectedIconPath": "resource/image/tabBar/active.png"
+      }
+    ],
+    "color": "#000000",
+    "selectedColor": "#FD963C",
+    "backgroundColor": "#ffffff",
+    "position": "bottom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

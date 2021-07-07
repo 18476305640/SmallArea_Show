@@ -1,0 +1,243 @@
+.swiper-container {
+    width: 750rpx;
+    height: 690rpx;
+    box-sizing: border-box;
+
+}
+.swiper-container>swiper {
+    display: block;
+    width: 750rpx;
+    height: 100%;
+
+}
+.bash_one {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.bash_one>text {
+    font-size: 60rpx;
+    color: #F4240D;
+    font-weight: 700;
+}
+.bash_one>view  {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.bash_two>.name {
+    font-size: 40rpx;
+    font-weight: 700;
+}
+.bash_two>.describe {
+    display: block;
+    font-size: 30rpx;
+}
+
+.bash_one>view>image {
+    display: inline-block;
+    width: 50rpx;
+    margin-left: 0rpx 15rpx;
+}
+
+.carousel-item,.carousel-item>image {
+    width: 100%;
+    height: 100%;
+
+
+}
+.bash_container {
+    width: 750rpx;
+    min-height: 200rpx;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15rpx 15rpx;
+    background-color: #FFFFFF;
+
+}
+.infomation-navigator {
+    width: 750rpx;
+    height: 1000rpx;
+    box-sizing: border-box;
+    margin: 10rpx 0rpx;
+    background-color: #FFFFFF;
+}
+.infomation-navigator>.nav {
+    display: block;
+    justify-content: start;
+    align-items: center;
+    font-size: 35rpx;
+    width: 100%;
+    line-height: 90rpx;
+    border-bottom: 1px solid #F5F5F5;
+    
+    box-sizing: border-box;
+    padding: 0rpx 15rpx;
+}
+.infomation-navigator>.nav>text {
+    display: inline-block;
+    margin-right: 20rpx;
+}
+.controler {
+    width: 750rpx;
+    height: 130rpx;
+    border-top: 1rpx solid #D5D5D5;
+    position: fixed;
+    left: 0rpx;
+    bottom: 0rpx;
+    height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+
+}
+.target-container {
+    width:500rpx;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+.target-container>view {
+    width: 230rpx;
+    margin:0rpx 10rpx;
+    text-align: center;
+    font-weight: 700;
+    line-height: 70rpx;
+    border-radius: 35rpx;
+    font-size: 30rpx;
+}
+.target-container>view:nth-child(1) {
+    background-color: #F91300;
+    color: #FFFFFF;
+
+}
+.target-container>view:nth-child(2) {
+    background-color: #FFA900;
+    color: #FFFFFF;
+
+}
+.box-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.box-item>navigator{
+
+    width:83rpx;
+    height: 83rpx;
+    position: relative;
+
+}
+.box-item>navigator>image {
+
+    display: block;
+    width: 60%;
+    margin: 0rpx auto;
+    
+
+}
+.box-item>navigator>view {
+    position: absolute;
+    right: 0rpx;
+    top: 0rpx;
+    min-width: 25rpx;
+    height: 25rpx;
+    font-size: 20rpx;
+    border-radius: 12.5rpx;
+    line-height: 25rpx;
+    border: 2rpx solid #F23636;
+    color: #F23636;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+.box-item>navigator>text {
+    display: block;
+    width: 100%;
+    font-size: 20rpx;
+    text-align: center;
+}
+.style_window {
+    width: 750rpx;
+    position: fixed;
+    
+    bottom: 100rpx;
+    top: 0rpx;
+    left: 0rpx;right: 0rpx;
+    background: rgb(0, 0, 0,0.7);
+}
+.style_window>view {
+    width: 750rpx;
+    height: 60%;
+    position: absolute;
+    bottom: 0rpx;
+    background: #FFFFFF;
+}
+.style_item {
+  
+    line-height: 60rpx;
+    font-size: 30rpx;
+    margin: 20rpx 60rpx;
+    box-sizing: border-box;
+    padding: 0rpx 20rpx;
+    background: #F4F4F4 ;
+}
+.active_style {
+  background: #E02E24;
+  color: #FFFFFF;
+  border: none;
+
+  
+
+}
+.who {
+    width: 100%;
+    height: 170rpx;
+    border-bottom: 1px solid red;
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+     box-sizing: border-box;
+    padding: 0rpx 25rpx; 
+}
+.who>.img {
+     width: 130rpx;
+     height: 130rpx;
+}
+.who>.img>image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.who>.data {
+    height: 130rpx;
+    box-sizing: border-box;
+    padding: 0rpx 20rpx; 
+    display: flex;
+    flex-direction: column;
+    
+}
+.who>.data>text:nth-child(1) {
+    font-size: 40rpx;
+    color: #F91300;
+    font-weight: 700;
+}
+.who>.data>text:nth-child(2) {
+    font-size: 20rpx;
+    font-weight: 700;
+    color: #8D8D8D;
+    background: #F4F4F4;
+    margin:  15rpx 0rpx;
+    box-sizing: border-box;
+    padding: 5rpx;
+    border-radius: 5rpx;
+}
+
+

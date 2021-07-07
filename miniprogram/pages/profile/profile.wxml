@@ -1,0 +1,52 @@
+<view>
+    <!--
+      它是用户中心顶部用户detail的信息栏组件
+      接收：
+    
+    -->
+     <profileTop ></profileTop>
+     
+     <view class="option" >
+               <stack title="常用" >
+                       <stack-item  link="/pages/childrens/mession/mession">
+                            <view slot="mess">99+</view>
+                            <image slot="icon" src="/resource/image/menu/mession.png" mode="widthFix"></image>
+                            <view slot="name">消息</view>
+                      </stack-item>
+
+                      <stack-item>
+                            <view slot="mess"></view>
+                            <image slot="icon" src="/resource/image/menu/good.png" mode="widthFix"></image>
+                            <view slot="name">我的收藏</view>
+                      </stack-item>
+                      
+               </stack>
+
+               <stack title="服务" >
+                       <stack-item  link="/pages/childrens/mession/mession">
+                            <view slot="mess">99+</view>
+                            <image slot="icon" src="/resource/image/menu/mession.png" mode="widthFix"></image>
+                            <view slot="name">消息</view>
+                      </stack-item>
+
+                      <stack-item>
+                            <view slot="mess"></view>
+                            <image slot="icon" src="/resource/image/menu/good.png" mode="widthFix"></image>
+                            <view slot="name">我的收藏</view>
+                      </stack-item>
+
+                      <stack-item>
+                            <view slot="mess"></view>
+                            <image slot="icon" src="/resource/image/menu/kefu.png"  mode="widthFix"></image>
+                            <view slot="name">专属客服</view>
+                      </stack-item>
+                      
+                      <stack-item>
+                            <view slot="mess"></view>
+                            <image slot="icon" src="/resource/image/menu/store.png"  mode="widthFix"></image>
+                            <view slot="name">商家入驻</view>
+                        </stack-item>
+               </stack>
+     </view>
+
+</view>

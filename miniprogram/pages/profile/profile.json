@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "mp-icon": "/components/extend/icon/icon",
+    "stack": "/components/common/stack/stack",
+    "stack-item": "/components/common/stack-item/stack-item",
+    "profileTop": "/components/content/profileTop/profileTop"
+  }
+
+  
+
+
+}
